@@ -4,10 +4,10 @@ Then I can open the index.html file using the link http://localhost:8888/lab4.3/
 
 The page look like this:
 
-![](https://raw.githubusercontent.com/Jiawei41/CISC3140-Lab4/main/Lab4.3/img/htmlpage.png)
+![htmlpage.png (1306×1376) (raw.githubusercontent.com)](https://raw.githubusercontent.com/Jiawei41/CISC3140-LargeScaleWeb/main/Lab4/Lab4.3/img/htmlpage.png)
 
 In this page, you can search the data from only gender or only English as 2nd language or both. Once select at least one of them, click on "Diaplay" button,then the php file will respond to the submission. It will get the data that satisfy the condition from the database the data and display as json format.
 
 Here is a sample respond:
 
-![](https://raw.githubusercontent.com/Jiawei41/CISC3140-Lab4/main/Lab4.3/img/phpoutput.png)
+![phpoutput.png (2116×550) (raw.githubusercontent.com)](https://raw.githubusercontent.com/Jiawei41/CISC3140-LargeScaleWeb/main/Lab4/Lab4.3/img/phpoutput.png)
