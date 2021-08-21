@@ -1,4 +1,4 @@
-To run this program, I need to have a web server(such as Apache and Nginx) on. I do this by downloading the MAMP software (Link for download: https://www.mamp.info/en/downloads/), then I set the Document root to this folder (Week4), then click the "start" button on the top-right. (The default port for both Apache and Nginx are 8888, you can also change it in MAMP preferences setting )
+To run this program, I need to have a web server(such as Apache and Nginx) on. I do this by downloading the MAMP software (Link for download: https://www.mamp.info/en/downloads/), then I set the Document root to this folder (Lab4), then click the "start" button on the top-right. (The default port for both Apache and Nginx are 8888, you can also change it in MAMP preferences setting )
 
 Then I can open the index.html file using the link http://localhost:8888/lab4.3/index.html
 
