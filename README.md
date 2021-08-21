@@ -86,7 +86,7 @@ Create a table for at least 5 of the tools covered in class. (Use html)
 
 Prepare a webpage with CSS styling for 5.1
 
-### Task 5.3 Automated Deployment (3 points)
+### Task 5.3 Automated Deployment
 
 **Task Objective:**
 
