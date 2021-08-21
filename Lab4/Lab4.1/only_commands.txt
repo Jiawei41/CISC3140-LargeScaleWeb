@@ -1,0 +1,34 @@
+cd lab4.1
+sqlite3 example.db
+.databases
+create table musicGenre(id integer primary key,genre text);
+.show
+.schema
+.table
+insert into musicGenre values (1, 'Jazz');
+insert into musicGenre values (2, 'Rock');
+insert into musicGenre values (3, 'Blues');
+select * from musicGenre;
+.header on
+.mode column
+.width 5 30
+select * from musicGenre;
+delete from musicGenre where genre='Rock';
+select * from musicGenre;
+alter table musicGenre add song text;
+select * from musicGenre;
+update musicGenre set song='Summertime' where genre='Jazz';
+update musicGenre set song='Born Under A Bad Sign' where genre='Blues';
+update musicGenre set song="Let's Stay Together" where genre='Rhythm & blues (R&B)';
+.width 10 20 35
+select * from musicGenre;
+update musicGenre set id=2 where id=4;
+select * from musicGenre;
+.table
+drop table songs;
+.table
+.mode csv
+.import students.csv studnets
+.table
+.schema
+.exit

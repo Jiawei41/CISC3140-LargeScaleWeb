@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+
+    <style>
+        .text{
+            position: absolute;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px; 
+        }
+    </style>
+
+    <script>
+        function words_count(){
+            var count = 0;
+            var words = document.getElementById("mytext").value;
+            for (i=0;i<words.length;i++){
+                if (words[i]==" " || words[i]=="\n") {
+                    if ((words[i]==" " || words[i]=="\n") && (words[i+1]==" " || words[i+1]=="\n"))
+                        continue;
+                count++;
+            }
+            document.getElementById("num").innerHTML = count;
+        }
+    }     
+    </script>
+
+</head>
+
+<body style="background-color: rgb(210, 234, 241);">
+    <div class="text">
+        <label for="fname">Enter your text: <br>(Please enter a space character at the end of your text)</label><br>
+        <textarea id="mytext" onKeyUp="words_count()" rows="15" cols="80" placeholder="Enter your text here ... "></textarea>
+        <div>
+            WORDS COUNT：<span id="num">0</span>
+        </div>    
+    </div> 
+</body>
+
+</html>

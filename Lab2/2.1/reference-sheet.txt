@@ -1,0 +1,8 @@
+git             svn
+git init        svnadmin create         Create new repository
+git add         svn add                 Add file to repository
+git clone       svn checkout            Copy a repository
+git commit      svn commit              Commit file to repository / record changes
+git pull        svn update              update
+git status      svn status              Check status
+git log         svn log                 Shows the log messages

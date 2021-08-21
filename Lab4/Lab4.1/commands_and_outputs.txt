@@ -1,0 +1,107 @@
+Ξ ~ → cd desktop/cisc3140/week4/lab4.1                          ──(Wed,Aug04)─┘
+Ξ week4/lab4.1 → sqlite3 example.db                             ──(Wed,Aug04)─┘
+SQLite version 3.32.3 2020-06-18 14:16:19
+Enter ".help" for usage hints.
+sqlite> .databases
+main: /Users/jiawe_000/Desktop/CISC3140/Week4/Lab4.1/example.db
+sqlite> create table musicGenre(id integer primary key,genre text);
+sqlite> .show
+        echo: off
+         eqp: off
+     explain: auto
+     headers: off
+        mode: list
+   nullvalue: ""
+      output: stdout
+colseparator: "|"
+rowseparator: "\n"
+       stats: off
+       width: 
+    filename: example.db
+sqlite> .schema
+CREATE TABLE musicGenre(id integer primary key,genre text);
+sqlite> .table
+musicGenre
+sqlite> .show
+        echo: off
+         eqp: off
+     explain: auto
+     headers: off
+        mode: list
+   nullvalue: ""
+      output: stdout
+colseparator: "|"
+rowseparator: "\n"
+       stats: off
+       width: 
+    filename: example.db
+sqlite> insert into musicGenre values (1, 'Jazz');
+sqlite> insert into musicGenre values (2, 'Rock');
+sqlite> insert into musicGenre values (3, 'Blues');
+sqlite> insert into musicGenre values (4, 'Rhythm & blues (R&B)');
+sqlite> select * from musicGenre;
+1|Jazz
+2|Rock
+3|Blues
+4|Rhythm & blues (R&B)
+sqlite> .header on
+sqlite> .mode column
+sqlite> .width 5 30
+sqlite> select * from musicGenre;
+id     genre                         
+-----  ------------------------------
+1      Jazz                          
+2      Rock                          
+3      Blues                         
+4      Rhythm & blues (R&B)          
+sqlite> delete from musicGenre where genre='Rock';
+sqlite> select * from musicGenre; 
+id     genre                         
+-----  ------------------------------
+1      Jazz                                                   
+3      Blues                         
+4      Rhythm & blues (R&B)   
+sqlite> alter table musicGenre add song text;
+sqlite> select * from musicGenre; 
+id     genre                           song      
+-----  ------------------------------  ----------
+1      Jazz                            
+3      Blues                           
+4      Rhythm & blues (R&B)    
+sqlite> update musicGenre set song='Summertime' where genre='Jazz';
+sqlite> update musicGenre set song='Born Under A Bad Sign' where genre='Blues';                
+sqlite> update musicGenre set song="Let's Stay Together" where genre='Rhythm & blues (R&B)';
+sqlite> .width 10 20 35
+sqlite> select * from musicGenre;
+id          genre                 song                               
+----------  --------------------  -----------------------------------
+1           Jazz                  Summertime                         
+3           Blues                 Born Under A Bad Sign              
+4           Rhythm & blues (R&B)  Let's Stay Together                
+sqlite> update musicGenre set id=2 where id=4;
+sqlite> select * from musicGenre;
+id          genre                 song                               
+----------  --------------------  -----------------------------------
+1           Jazz                  Summertime                         
+2           Rhythm & blues (R&B)  Let's Stay Together                
+3           Blues                 Born Under A Bad Sign  
+sqlite> .table
+musicGenre        
+sqlite> drop table musicGenre;
+sqlite> .table
+sqlite> .mode csv
+sqlite> .import students.csv students
+sqlite> .table
+students     
+sqlite> .schema
+CREATE TABLE students(
+  "id" TEXT,
+  "first_name" TEXT,
+  "last_name" TEXT,
+  "ethnicity" TEXT,
+  "gender" TEXT,
+  "hs_gpa" TEXT,
+  "english_2nd_language" TEXT
+);
+sqlite> .exit
+☁  lab4.1  

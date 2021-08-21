@@ -1,0 +1,47 @@
+[jwchang@sol28 lab2.1]$ svnadmin create repo1
+[jwchang@sol28 lab2.1]$ ls
+repo1
+[jwchang@sol28 lab2.1]$ cd repo1
+[jwchang@sol28 repo1]$ pwd
+/users1/st/jwchang/cisc3140/lab2/lab2.1/repo1
+[jwchang@sol28 repo1]$ cd ..
+[jwchang@sol28 lab2.1]$ svn checkout file:///users1/st/jwchang/cisc3140/lab2/lab2.1/repo1 workSpace
+Checked out revision 0.
+[jwchang@sol28 lab2.1]$ ls
+repo1  workSpace
+[jwchang@sol28 lab2.1]$ cd workSpace
+[jwchang@sol28 workSpace]$ touch text.txt
+[jwchang@sol28 workSpace]$ vim text.txt
+[jwchang@sol28 workSpace]$ cat text.txt
+Hello!!!
+[jwchang@sol28 workSpace]$ svn add text.txt
+A         text.txt
+[jwchang@sol28 workSpace]$ svn commit -m "First commit--workSpace" text.txt
+Adding         text.txt
+Transmitting file data .
+Committed revision 1.
+[jwchang@sol28 workSpace]$ cd ..
+[jwchang@sol28 lab2.1]$ svn checkout file:///users1/st/jwchang/cisc3140/lab2/lab2.1/repo1 workSpace2
+A    workSpace2/text.txt
+Checked out revision 1.
+[jwchang@sol28 lab2.1]$ ls
+repo1  workSpace  workSpace2
+[jwchang@sol28 lab2.1]$ cd workSpace
+[jwchang@sol28 workSpace]$ cat text.txt
+Hello!!!
+[jwchang@sol28 workSpace]$ vim text.txt
+[jwchang@sol28 workSpace]$ cat text.txt
+Hello World!!!
+[jwchang@sol28 workSpace]$ svn commit -m "Second commit--workSpace" text.txt
+Sending        text.txt
+Transmitting file data .
+Committed revision 2.
+[jwchang@sol28 workSpace]$ cd ..
+[jwchang@sol28 lab2.1]$ cd workSpace2
+[jwchang@sol28 workSpace2]$ svn update text.txt
+Updating 'text.txt':
+U    text.txt
+Updated to revision 2.
+[jwchang@sol28 workSpace2]$ cat text.txt
+Hello World!!!
+

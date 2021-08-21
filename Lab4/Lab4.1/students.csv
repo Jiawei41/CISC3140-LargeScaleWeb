@@ -1,0 +1,13 @@
+id,first_name,last_name,ethnicity,gender,hs_gpa,english_2nd_language
+1,John,Doe,Hispanic,M,2.71,FALSE
+2,Jane,Smith,Hispanic,F,3.73,FALSE
+3,Sarah,Thomas,Hispanic,M,2.64,FALSE
+4,Frank,Brown,Race/ethnicity unknown,M,3.68,FALSE
+5,Mike,Davis,White,F,3.46,TRUE
+6,Jennifer,Wilson,Asian,M,3.28,FALSE
+7,Jessica,Garcia,White,F,3.41,FALSE
+8,Fred,Clark,Hispanic,F,2.54,TRUE
+9,Bob,Lopez,White,F,3.24,FALSE
+10,Gerty,Gramma,Hispanic,M,2.86,TRUE
+11,George,Boy,White,M,3.46,FALSE
+12,Frankin,Benny,Hispanic,M,3.78,TRUE
