@@ -4,7 +4,7 @@
 
 
 ### This is a word count page. When you enter text in the box, it will count the number of words you entered. View page:
-https://jiawei41.github.io/CISC3140-LAB3.2/word_counter.html
+https://jiawei41.github.io/CISC3140-LargeScaleWeb/Lab3/3.2/word_counter.html
 
 ---
 #### Sample:
