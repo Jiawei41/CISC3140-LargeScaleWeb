@@ -41,10 +41,10 @@ The report will be displayed on the terminal, The code will not create a file to
 ---
 
 ### When you run this program, the output should look like this:
-![](https://github.com/Jiawei41/CISC3140-Lab3/blob/main/Lab3.1/img/run_make.png)
+![run_make.png (2860×1230) (raw.githubusercontent.com)](https://raw.githubusercontent.com/Jiawei41/CISC3140-LargeScaleWeb/main/Lab3/3.1/img/run_make.png)
 
 ### If you use ***make clean***,it should look like this:
-![](https://github.com/Jiawei41/CISC3140-Lab3/blob/main/Lab3.1/img/make_clean.png)
+![make_clean.png (1334×284) (raw.githubusercontent.com)](https://raw.githubusercontent.com/Jiawei41/CISC3140-LargeScaleWeb/main/Lab3/3.1/img/make_clean.png)
 
 
 ---
